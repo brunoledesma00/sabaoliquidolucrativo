@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula Renda Limpa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .pulse-shadow {
+            box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(22, 163, 74, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- FAKE NEWS BAR -->
+    <div class="bg-red-800 text-white text-center p-2 font-bold text-sm sticky top-0 z-50">
+        <p>ATENÇÃO: Vagas fechando em breve.</p>
+    </div>
+
+    <div class="container mx-auto px-4 py-6">
+        <!-- SEÇÃO 1: A DOR (Texto Persuasivo) -->
+        <section class="text-center">
+            <p class="text-red-600 font-bold text-sm bg-red-100 inline-block px-3 py-1 rounded-full">LEIA COM ATENÇÃO ANTES QUE SAIA DO AR</p>
+            <h1 class="text-3xl sm:text-4xl font-black text-gray-900 my-4 max-w-2xl mx-auto">
+                Se você está cansado de ver o dinheiro sumir no supermercado, esta pode ser a página mais importante que você vai ler este ano.
+            </h1>
+            
+            <div class="text-left text-lg text-gray-800 space-y-5 max-w-xl mx-auto my-8 bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                <p>Você também sente aquele <strong class="text-red-700">soco no estômago</strong> toda vez que passa no caixa?</p>
+                <p>Vê os preços dos produtos de limpeza subindo toda semana, enquanto seu salário continua a mesma miséria?</p>
+                <p>É uma sensação de impotência, de trabalhar só pra pagar conta e enriquecer os donos de supermercado. Eles contam com o seu cansaço pra te vender <strong class="text-red-700">água com corante a preço de ouro.</strong></p>
+                <p class="font-bold">Mas e se eu te dissesse que existe uma brecha nesse sistema?</p>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 my-6 max-w-2xl mx-auto">
+                Uma "Fórmula Secreta" Simples Permite que Pessoas Comuns Produzam em Casa um Sabão 3x Melhor e Criem uma Renda Extra de até R$3.000.
+            </h2>
+
+             <p class="text-md sm:text-lg text-gray-700 max-w-xl mx-auto mb-8">
+                Esqueça tudo que você sabe sobre economia. Estamos falando de transformar R$50 em ingredientes em mais de R$250 em produto final. É um lucro tão absurdo que as grandes marcas <strong class="text-red-700">rezam para que você nunca descubra.</strong>
+            </p>
+
+            <!-- CTA PRINCIPAL -->
+            <div class="mt-8">
+                 <a href="#comprar" class="cta-button inline-block w-full max-w-md mx-auto bg-green-600 text-white text-xl font-bold py-5 px-6 rounded-lg shadow-lg hover:bg-green-700 pulse-shadow">
+                     QUERO DESCOBRIR A FÓRMULA AGORA!
+                 </a>
+                 <p class="text-sm text-gray-600 mt-3">Compra 100% segura. Acesso vitalício.</p>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO: PROVA DA MÍDIA -->
+        <section class="my-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-black text-center text-gray-900 mb-2">Não acredita em mim? Acredite na MÍDIA!</h2>
+                <p class="text-center text-gray-700 mb-6">Até os engravatados da G1 já perceberam que fazer dinheiro em casa não é mais futuro, é a REALIDADE de quem não é otário. Se liga nessa porra:</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Print 1 -->
+                    <div>
+                        <img src="https://placehold.co/300x400/cccccc/000000?text=Print+G1+Renda+Extra" alt="Manchete G1 sobre Renda Extra" class="rounded-lg shadow-md border-2 border-gray-200">
+                        <p class="text-xs text-center mt-2 text-gray-600 font-semibold">"Crise faz brasileiro buscar 2ª fonte de renda..."</p>
+                    </div>
+                    <!-- Print 2 -->
+                    <div>
+                        <img src="https://placehold.co/300x400/cccccc/000000?text=Print+G1+Vendas+Casa" alt="Manchete G1 sobre Vendas de Casa" class="rounded-lg shadow-md border-2 border-gray-200">
+                         <p class="text-xs text-center mt-2 text-gray-600 font-semibold">"Vender produtos caseiros vira negócio lucrativo..."</p>
+                    </div>
+                    <!-- Print 3 -->
+                    <div class="col-span-2 md:col-span-1">
+                        <img src="https://placehold.co/300x400/cccccc/000000?text=Print+G1+Limpeza" alt="Manchete G1 sobre Produtos de Limpeza" class="rounded-lg shadow-md border-2 border-gray-200">
+                         <p class="text-xs text-center mt-2 text-gray-600 font-semibold">"Mercado de limpeza artesanal cresce no país..."</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-800 mt-6 font-bold">Ainda tá na dúvida, seu comédia? O mundo tá fazendo dinheiro e você aí, parado. ACORDA PRA VIDA!</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: PROVA SOCIAL (Vídeos de Depoimentos) -->
+        <section class="my-12">
+            <h2 class="text-2xl sm:text-3xl font-black text-center text-gray-900 mb-6">Pessoas REAIS, Resultados REAIS:</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <p class="font-bold text-center mb-2">"Paguei minhas dívidas em 2 semanas!"</p>
+                    <div class="video-container">
+                        <!-- COLOQUE O LINK DO VÍDEO 1 AQUI -->
+                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <p class="font-bold text-center mt-2">- Cláudia R., Belford Roxo (RJ)</p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <p class="font-bold text-center mb-2">"Quem ria de mim, hoje pede emprestado."</p>
+                    <div class="video-container">
+                        <!-- COLOQUE O LINK DO VÍDEO 2 AQUI -->
+                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <p class="font-bold text-center mt-2">- Márcia F., Itaquera (SP)</p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <p class="font-bold text-center mb-2">"Faço R$1200 sem sair de casa."</p>
+                    <div class="video-container">
+                        <!-- COLOQUE O LINK DO VÍDEO 3 AQUI -->
+                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <p class="font-bold text-center mt-2">- Ronaldo P., Curitiba (PR)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: A OFERTA (O que você vai receber) -->
+        <section class="my-12 bg-gray-900 text-white p-6 rounded-lg shadow-2xl">
+            <h2 class="text-2xl sm:text-4xl font-black text-center text-yellow-400 mb-2">CHEGA DE CAÔ!</h2>
+            <h3 class="text-xl sm:text-2xl font-bold text-center text-white mb-8">É isso que você vai levar pra casa AGORA e transformar sua cozinha numa máquina de dinheiro:</h3>
+
+            <!-- MÓDULO PRINCIPAL -->
+            <div class="bg-gray-800 border-2 border-yellow-400 rounded-lg p-6 mb-8">
+                <h4 class="font-black text-2xl text-yellow-400 mb-4">MÓDULO PRINCIPAL: A FÓRMULA RENDA LIMPA (Vale R$197)</h4>
+                <p class="mb-4 text-gray-300">Aqui é onde a mágica acontece, seu porra. É o passo a passo completo, em vídeo, direto ao ponto, sem enrolação, pra você sair do zero e virar um mestre do sabão lucrativo.</p>
+                <ul class="space-y-3 text-gray-200 list-inside">
+                    <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">▶</span><div><strong>A Lista de Compras Inteligente:</strong> Saiba exatamente o que comprar, onde comprar e como não ser enganado pelos vendedores para economizar até 40%.</div></li>
+                    <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">▶</span><div><strong>Mão na Massa Sem Erro:</strong> A receita exata, filmada em detalhes, pra você acertar de primeira. As medidas, o ponto certo, os truques... tá tudo aqui.</div></li>
+                    <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">▶</span><div><strong>O Segredo da Espuma e do Cheiro:</strong> Como fazer um sabão que espuma pra caralho e deixa um cheiro que vicia, fazendo o cliente implorar por mais.</div></li>
+                    <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">▶</span><div><strong>Embalagem e Precificação de Profissional:</strong> Como engarrafar, rotular e botar o preço certo pra esmagar a concorrência e botar lucro de verdade no bolso.</div></li>
+                </ul>
+            </div>
+
+            <h3 class="text-2xl font-black text-center text-white my-8">...E NÃO É SÓ ISSO, SEU ARROMBADO! Se você agir agora, leva de GRAÇA esse arsenal de bônus:</h3>
+
+            <!-- BÔNUS -->
+            <div class="space-y-6">
+                <!-- Bônus 1 -->
+                <div class="bg-gray-800 p-4 rounded-lg flex items-start">
+                    <img src="https://placehold.co/80x80/1F2937/FBBF24?text=SCRIPTS" class="rounded-lg mr-4" alt="Bônus 1">
+                    <div>
+                        <strong class="text-yellow-400">ARSENAL DE VENDAS PELO WHATSAPP (Vale R$67)</strong>
+                        <p class="text-sm text-gray-300">Para de ser tímido, porra! Te dou os scripts prontos, é só COPIAR e COLAR pra vender pra vizinho, parente, e até praquele seu amigo fofoqueiro do bairro.</p>
+                    </div>
+                </div>
+                <!-- Bônus 2 -->
+                <div class="bg-gray-800 p-4 rounded-lg flex items-start">
+                    <img src="https://placehold.co/80x80/1F2937/FBBF24?text=RÓTULOS" class="rounded-lg mr-4" alt="Bônus 2">
+                    <div>
+                        <strong class="text-yellow-400">FÁBRICA DE RÓTULOS PROFISSIONAIS (Vale R$37)</strong>
+                        <p class="text-sm text-gray-300">Seu produto pode ser bom, mas se parecer merda, não vende. Te dou 10 modelos de etiquetas pra imprimir que fazem seu sabão parecer mais caro e chique que o do mercado.</p>
+                    </div>
+                </div>
+                <!-- Bônus 3 -->
+                <div class="bg-gray-800 p-4 rounded-lg flex items-start">
+                     <img src="https://placehold.co/80x80/1F2937/FBBF24?text=PLANILHA" class="rounded-lg mr-4" alt="Bônus 3">
+                    <div>
+                        <strong class="text-yellow-400">A CALCULADORA ANTI-PREJUÍZO (Vale R$47)</strong>
+                        <p class="text-sm text-gray-300">Matemática é chato pra caralho, eu sei. Por isso fiz uma planilha pronta. Você bota os custos e ela te diz o preço de venda e o lucro. À prova de burro.</p>
+                    </div>
+                </div>
+                <!-- Bônus 4 (Novo) -->
+                <div class="bg-red-900 border-2 border-red-500 p-4 rounded-lg flex items-start">
+                     <img src="https://placehold.co/80x80/991B1B/FBBF24?text=GUIA" class="rounded-lg mr-4" alt="Bônus 4">
+                    <div>
+                        <strong class="text-yellow-400">BÔNUS ESPECIAL: GUIA ANTI-ERRO (Vale R$49)</strong>
+                        <p class="text-sm text-gray-300">Vou te contar os 5 erros idiotas que 99% dos iniciantes cometem e que fazem eles perderem dinheiro e desistirem. Só com isso aqui você já economiza o valor do curso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Block -->
+            <div id="comprar" class="bg-white text-gray-900 p-6 rounded-lg shadow-xl mt-12 text-center">
+                 <img src="https://placehold.co/300x200/cccccc/000000?text=Mockup+do+Produto" alt="Produto Fórmula Renda Limpa" class="mx-auto mb-6 rounded-lg shadow-md">
+                 <p class="text-lg">Valor total de tudo que você leva: <span class="line-through">R$397,00</span></p>
+                 <p class="text-xl font-semibold mt-2">Mas se você não for um vacilão e agir agora, seu acesso completo sai por apenas:</p>
+                 <p class="text-5xl sm:text-7xl font-black my-2 text-green-600">R$47</p>
+                 <p class="text-lg font-semibold">ou 12x de R$4,72 no cartão</p>
+                 <p class="text-sm text-gray-600 mb-6">(menos que um lanche podre por mês!)</p>
+                 
+                 <a href="#comprar" class="cta-button block w-full mx-auto bg-green-600 text-white text-xl font-bold p-5 rounded-lg shadow-lg hover:bg-green-700 pulse-shadow">
+                     SIM, QUERO MINHA FÁBRICA DE DINHEIRO AGORA!
+                 </a>
+                 <img src="https://placehold.co/300x50/ffffff/000000?text=Compra+Segura+e+Certificada" class="mx-auto mt-4" alt="Compra Segura">
+            </div>
+        </section>
+        
+        <!-- SEÇÃO 4: GARANTIA INCONDICIONAL -->
+        <section class="my-12 bg-blue-50 p-6 rounded-lg border-2 border-dashed border-blue-300 text-center">
+            <img src="https://placehold.co/120x120/3B82F6/FFFFFF?text=7+DIAS" class="rounded-full mx-auto mb-4" alt="Selo de Garantia 7 Dias">
+            <h3 class="text-2xl font-bold text-blue-800">RISCO ZERO PARA VOCÊ</h3>
+            <p class="text-md text-gray-800 mt-2 max-w-xl mx-auto">Ou você aplica a fórmula e tem potencial de fazer dinheiro, ou eu não quero seu dinheiro. Você tem 7 dias completos para testar tudo. Se não gostar, por qualquer motivo, é só pedir o reembolso. Simples assim. O risco é 100% meu.</p>
+        </section>
+
+        <!-- SEÇÃO 5: FAQ (Perguntas Frequentes) -->
+        <section class="my-12 max-w-2xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-black text-center text-gray-900 mb-6">Ainda tem dúvidas?</h2>
+            <div class="space-y-3">
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold text-md">Não tenho experiência, vou conseguir?</summary>
+                    <p class="mt-2 text-gray-700 text-sm">Com certeza! A fórmula foi feita para iniciantes. É um passo a passo em vídeo, à prova de erros.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold text-md">Preciso de muito dinheiro para começar?</summary>
+                    <p class="mt-2 text-gray-700 text-sm">Não! Com menos de R$50 você já compra matéria-prima para uma produção que pode te render mais de R$200.</p>
+                </details>
+                 <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold text-md">O acesso é por quanto tempo?</summary>
+                    <p class="mt-2 text-gray-700 text-sm">O acesso é vitalício! Você paga uma vez e acessa para sempre, incluindo futuras atualizações.</p>
+                </details>
+            </div>
+        </section>
+    </div>
+    
+    <!-- STICKY CTA FOR MOBILE -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 w-full bg-white p-3 border-t-2 border-gray-200 shadow-lg z-40 transform translate-y-full transition-transform duration-500">
+         <a href="#comprar" class="cta-button block w-full mx-auto bg-green-600 text-white text-lg font-bold p-4 rounded-lg text-center pulse-shadow">
+             QUERO LUCRAR COM SABÃO (ÚLTIMAS VAGAS)
+         </a>
+    </div>
+
+
+    <footer class="bg-gray-800 text-white text-center text-xs p-4 mt-12">
+        <p>Copyright &copy; 2024 - Fórmula Renda Limpa.</p>
+        <p class="mt-2 opacity-60">Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados.</p>
+    </footer>
+
+    <script>
+        // Sticky CTA logic
+        const stickyCTA = document.getElementById('sticky-cta');
+        const showPoint = 300; // Pixels to scroll before showing CTA
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > showPoint) {
+                stickyCTA.classList.remove('translate-y-full');
+            } else {
+                stickyCTA.classList.add('translate-y-full');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
